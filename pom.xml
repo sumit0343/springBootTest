@@ -24,6 +24,19 @@
 		<java.version>1.8</java.version>
 	</properties>
 
+	<distributionManagement>
+	<snapshotRepository>
+		<id>MyCustomRepoNexusSnapshots</id>
+		<url>http://localhost:8081/repository/MyCustomRepoNexusSnapshots/</url>
+	</snapshotRepository>
+
+		<repository>
+			<id>MyCustomRepoNexusReleases</id>
+			<url>http://localhost:8081/repository/MyCustomRepoNexusReleases/</url>
+		</repository>
+
+	</distributionManagement>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
